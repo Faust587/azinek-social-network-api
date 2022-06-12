@@ -1,0 +1,20 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": "eslint-config-airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "overrides": [
+    {
+      "files": [ "*.test.js" ],
+      "extends": ["plugin:jest/all"],
+      "rules": {
+        "jest/require-top-level-describe": "off",
+        "jest/no-hooks": "off"
+      }
+    }
+  ]
+}
