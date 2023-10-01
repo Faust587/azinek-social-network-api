@@ -3,7 +3,7 @@ const { STATUS } = require('../constants/Status');
 const { ROLES: { USER } } = require('../constants/Roles');
 
 const { Schema, model } = mongoose;
-
+//small change
 const userSchema = new Schema(
   {
     userName: { type: String, unique: true, required: true },
